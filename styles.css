@@ -1,0 +1,33 @@
+ body{
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+     color: #ffffff;
+     background-color: #000000;
+     padding: 10px
+ }
+
+ .navegador{
+     background-color: transparent;
+     color: white;
+ }
+
+ .logo-navbar{
+     height: 50px;
+     width: 50px;
+ }
+
+ .navegador h2{
+    color:#ffffff;
+ }
+
+ .navegador a{
+     color: #ffffff;
+ }
+
+ .navegador a:hover{
+     background-color: blue;
+     color: #ffffff;
+ }
+
+ 
