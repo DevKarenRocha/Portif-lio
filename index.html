@@ -11,8 +11,7 @@
          <link href="styles.css" rel="stylesheet">
      </head>
      <body>
-     <!--NAVEGADOR-->
-         
+         <!--NAVEGADOR--> 
          <header class="navegador">
              <nav class="navbar navbar-expand-lg">
                  <div class="container-fluid">
@@ -39,25 +38,29 @@
              </nav>
          </header>
          <main>
+             <!--EFEITO DO BANNER-->
+             <div id="particles-js"></div>
+        
+             <!--HOME-->
              <section id="home">
                  <div class="banner">
                      <div class="container-fluid">
                          <div class="row align-items-center">
-                             <div class="col-md-6 text-center">
-                                 <div class=" typing-effect ">
-                                     <h5>Olá, meu nome é</h5>
-                                     <h1>Karen Rocha</h1>
+                             <div class="col-md-6">
+                                 <h5>Olá, meu nome é</h5>
+                                 <h1 class="text-center">Karen Rocha</h1>
+                                 <div class="text-center typing-effect"> 
                                      <h4>Desenvolvimento front-end</h4>
                                  </div>
                                  <div class="text-center">
-                                     <button class="banner-bnt"><a class="banner-link" href="">Curriculo</a></button>
+                                     <button class="banner-bnt"><a class="banner-link" href="">Currículo</a></button>
                                      <button class="banner-bnt"><a class="banner-link" href="">Contato</a></button>
-                                     <button class="banner-bnt"><a class="banner-link" href="">Portifólio</a></button>
+                                     <button class="banner-bnt"><a class="banner-link" href="">Portfólio</a></button>
                                  </div>
                              </div>
                              <div class="col-md-6 text-center">
                                  <figure>
-                                     <img class="banner-img"src="IMG/foto1.png" alt="foto-perfil">
+                                     <img class="banner-img" src="IMG/foto1.png" alt="foto-perfil">
                                  </figure>
                              </div>
                          </div>
@@ -67,17 +70,29 @@
                                      <img class="icon1" src="IMG/link1.png" alt="logo-linkedin">
                                  </a>
                                  <a class="icon" href="https://github.com/DevKarenRocha" target="_blank" rel="noopener noreferrer">
-                                     <img class="icon1" src="IMG/link2.png" alt="logo-linkedin">
+                                     <img class="icon1" src="IMG/link2.png" alt="logo-github">
                                  </a>
                                  <a class="icon" href="https://www.instagram.com/dev.karenrocha/" target="_blank" rel="noopener noreferrer">
-                                     <img class="icon1" src="IMG/link3.png" alt="logo-linkedin">
+                                     <img class="icon1" src="IMG/link3.png" alt="logo-instagram">
                                  </a>
                              </div>
                          </div>
                      </div>
                  </div>
              </section>
+             <
          </main>
+        
+        <!-- particles.js library -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        
+        <!-- Custom Script -->
+        <script>
+            particlesJS.load('particles-js', 'particles-config.json', function() {
+                console.log('Particles.js configurado com sucesso!');
+            });
+        </script>
+        
          <script src="script.js"></script>
      </body>
 </html>
