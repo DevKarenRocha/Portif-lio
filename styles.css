@@ -8,7 +8,10 @@
  }
 
  .navegador{
-     background-color: transparent;
+     background-image: url(IMG/banner.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
      color: white;
  }
 
@@ -30,4 +33,57 @@
      color: #ffffff;
  }
 
+.navbar-toggler{
+    background-color:#1900ff;
+}
+
+#home{
+    background-image: url(IMG/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px;
+}
+
+.banner-bnt{
+    background-color: #001aff;
+    
+}
+
+.banner-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.banner-bnt:hover{
+    background-color: #00b7ff;
+
+}
+
+ .banner-img{
+     width: 350px; 
+      height: 350px; 
+      border-radius: 50%; 
+      overflow: hidden; 
+      object-fit: cover; 
+ }
+
  
+ 
+ button{
+    background-color: #000000;
+ }
+
+ .social-icon {
+    display: flex; /* Para controle de alinhamento com flexbox */
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+}
+
+.align-items-right {
+    text-align: right; /* Garante que o conteúdo interno fique à direita */
+}
+
+.icon1 {
+    max-width: 50px; /* Ajusta a imagem ao tamanho do container */
+    height: 50px; /* Mantém a proporção da imagem */
+}
