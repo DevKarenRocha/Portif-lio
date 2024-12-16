@@ -54,19 +54,19 @@ particlesJS("particles-js",
                 "width": 1
             },
             "move": {
-                "enable": true,
-                "speed": 6,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
+    "enable": true,
+    "speed": 2, // Velocidade reduzida (antes era 6)
+    "direction": "none",
+    "random": false,
+    "straight": false,
+    "out_mode": "out",
+    "bounce": false,
+    "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+    }
+}
         },
         "interactivity": {
             "detect_on": "canvas",
@@ -134,6 +134,3 @@ update = function() {
     }
     requestAnimationFrame(update);
 };
-
-// Inicia atualização
-requestAnimationFrame(update);
