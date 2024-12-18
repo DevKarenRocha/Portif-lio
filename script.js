@@ -134,3 +134,9 @@ update = function() {
     }
     requestAnimationFrame(update);
 };
+
+
+function showDescricao(texto) {
+    const descricao = document.getElementById('descricao');
+    descricao.textContent = texto;
+}

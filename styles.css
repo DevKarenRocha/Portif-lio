@@ -23,7 +23,7 @@
  .navegador a{
     display: inline-block;
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 13px;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -50,24 +50,30 @@
 
 
 .banner-bnt {
-    display: inline-block;
+    display: inline;
     padding: 10px 20px;
-    font-size: 15px;
-    color: #fff;
+    font-size: 14px;
     border: none;
-    background-color: #0a0346;
-    border-radius: 5px;
+    background-color: #ffffff;
+    border-radius: 25px;
     cursor: pointer;
     text-transform: uppercase;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito */
-    margin: 5px;
+    margin: 2px;
     text-align: center;
+    
+}
+
+.banner-bnt a{
+    text-decoration: none;
+    color: #000000;
 }
 
 /* Efeito de zoom no hover */
 .banner-bnt:hover {
     transform: scale(1.1); /* Aumenta o botão em 10% */
     box-shadow: 0 5px 15px rgb(255, 255, 255); /* Adiciona sombra */
+    text-decoration: none;
 }
 
 /* Estilo para o link dentro do botão */
@@ -128,7 +134,8 @@
 }
 
 .icon1:hover{
-    background-color: #1900ff;
+    filter: drop-shadow( 1px 1px 20px white);
+    transform: scale(1.3); /* Efeito de zoom no card */
 }
 
 #sobre{
@@ -204,19 +211,16 @@
     position: relative;
 }
 
- .icon1{
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 .icon2{
     width: 200px;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+    filter: drop-shadow( 1px 1px 20px white);
+    
 }
+
+
 
 /* Detalhes fora do card */
 .card-details {
@@ -254,5 +258,84 @@
 
 /* Anima a barra de progresso no hover */
 .card:hover + .card-details .progress-bar {
-    width: 35%; /* A barra vai até 25% */
+    width: 20%; /* A barra vai até 25% */
+    
+}
+
+
+#habilidades {
+    margin-top: 50px;
+}
+
+#habilidades h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.habilidade {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de cada habilidade */
+.hb {
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #ffffff1a;
+    width: 120px;
+    height: 150px;
+    display: flex; /* Flexbox para centralizar conteúdo */
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center; /* Alinha horizontalmente */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.hb:hover {
+    transform: translateY(-15px);
+    
+}
+
+
+.hb img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 5px;
+
+}
+
+.hb img:hover{
+    filter: drop-shadow( 1px 1px 20px white);
+}
+.hb p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Alinhamento da descrição */
+.card-dt {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    height: 100%; /* Ocupa toda a altura */
+}
+
+#descricao {
+    font-size: 16px;
+    font-style: italic;
+    color: #ffffff;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    height: 200px; /* Define altura do container */
+    text-align: center;
+    margin: 0;
 }
