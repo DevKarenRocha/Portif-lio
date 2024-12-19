@@ -13,6 +13,7 @@
          <link href="styles.css" rel="stylesheet">
      </head>
      <body>
+
          <!--NAVEGADOR--> 
          <header class="navegador">
              <nav class="navbar navbar-expand-lg">
@@ -30,7 +31,7 @@
                          <ul class="navbar-nav ms-auto">
                              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                              <li class="nav-item"><a class="nav-link" href="#sobremim">Sobre mim</a></li>
-                             <li class="nav-item"><a class="nav-link" href="#formação">Formação</a></li>
+                             <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
                              <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
                              <li class="nav-item"><a class="nav-link" href="#portifolio">Portifólio</a></li>
                              <li class="nav-item"><a class="nav-link" href="#certificações">Certificações</a></li>
@@ -39,50 +40,55 @@
                  </div>
              </nav>
          </header>
-         <main>
-             <!--EFEITO DO BANNER-->
-             <div id="particles-js"></div>
-        
+         
+         <!--EFEITO DO BANNER-->
+         <div id="particles-js"></div>
              <!--HOME-->
              <section id="home">
-                 <div class="banner">
-                     <div class="container-fluid">
-                         <div class="row align-items-center">
-                             <div class="col-md-6">
-                                 <h5>Olá, meu nome é</h5>
-                                 <h1 class="text-center">Karen Rocha</h1>
-                                 <h4 class="text-center">Desenvolvedora front-end</h4>
-                                 <div class="text-center">
-                                     <button class="banner-bnt"><a class="banner-link" href="">Currículo</a></button>
-                                     <button class="banner-bnt"><a class="banner-link" href="">Contato</a></button>
-                                     <button class="banner-bnt"><a class="banner-link" href="">Portfólio</a></button>
-                                 </div>
-                             </div>
-                             <div class="col-md-6 text-center">
-                                 <figure class="align-items-center">
-                                     <img class="banner-img" src="IMG/foto1.png" alt="foto-perfil">
-                                 </figure>
-                             </div>
-                         </div>
-                         <div class="social-icon">
-                             <div class="align-items-right">
-                                 <a class="icon" href="https://www.linkedin.com/in/karen-cristina-rocha-braga-61505928b" target="_blank" rel="noopener noreferrer">
-                                     <img class="icon1" src="IMG/link1.png" alt="logo-linkedin">
-                                 </a>
-                                 <a class="icon" href="https://github.com/DevKarenRocha" target="_blank" rel="noopener noreferrer">
-                                     <img class="icon1" src="IMG/link2.png" alt="logo-github">
-                                 </a>
-                                 <a class="icon" href="https://www.instagram.com/dev.karenrocha/" target="_blank" rel="noopener noreferrer">
-                                     <img class="icon1" src="IMG/link3.png" alt="logo-instagram">
-                                 </a>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </section>
+                <div class="banner">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Imagem -->
+                            <div class="col-md-6 text-center order-1 order-md-2">
+                                <figure>
+                                    <img class="banner-img" src="IMG/foto1.png" alt="foto-perfil">
+                                </figure>
+                            </div>
+                            <!-- Texto -->
+                            <div class="col-md-6 d-flex flex-column align-items-center text-center text-md-start order-2 order-md-1">
+                                <div class="banner-text">
+                                    <h5>Olá, meu nome é</h5>
+                                    <h1>Karen Rocha</h1>
+                                    <h4>Front-end Developer</h4>
+                                </div>
+                                <div>
+                                    <button class="banner-btn"><a class="banner-link" href="">Currículo</a></button>
+                                    <button class="banner-btn"><a class="banner-link" href="">Contato</a></button>
+                                    <button class="banner-btn"><a class="banner-link" href="">Portfólio</a></button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="social-icon d-flex justify-content-center justify-content-lg-end mt-3">
+                            <a class="icon me-2" href="https://www.linkedin.com/in/karen-cristina-rocha-braga-61505928b" target="_blank" rel="noopener noreferrer">
+                                <img class="icon1" src="IMG/link1.png" alt="logo-linkedin">
+                             </a>
+                             <a class="icon me-2" href="https://www.instagram.com/dev.karenrocha/" target="_blank" rel="noopener noreferrer">
+                                 <img class="icon1" src="IMG/link3.png" alt="logo-instagram">
+                             </a>
+                             <a class="icon me-2" href="https://github.com/DevKarenRocha" target="_blank" rel="noopener noreferrer">
+                                 <img class="icon1" src="IMG/link2.png" alt="logo-github">
+                             </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+                  
              <section id="sobremim">
                  <div class="container">
+                     <div class="sobre-titulo">
                      <h1 class="text-center">Sobre mim</h1>
+                    </div>
                      <div class="row align-items-right">
                          <div class="col-md-6 text-center">
                              <figure>
@@ -102,54 +108,57 @@
                      </div>
                  </div>
              </section>
-             <section id="formação" class="formation-section">
-                 <div class="container">
-                     <div class="intro-text">
-                         <h1>Formação</h1>
-                         <p>Passe o mouse para ver os detalhes da minha formação</p>
-                     </div>
-                     <div class="row">
-                     <div class="card ">
-                         <div class="card-title">
-                             <h3>Ciencias da Computação</h3>
-                         </div>
-                         <div class="image-container">
-                             <img class="icon2" src="IMG/icon1.png" alt="Imagem 2">
-                         </div>
-                     </div>
-                     <div class="card-details align-items-center">
-                         <p>
-                             Cursando o 3º semestre de Ciências da Computação, adquiri conhecimentos em 
-                             HTML5, CSS, Bootstrap e estou aprendendo JavaScript e Java. Estou focada 
-                             em desenvolver soluções digitais eficientes e em continuar meu aprendizado na área.
-                         </p>
-                         <div class="progress-bar-container">
-                            <div class="progress-bar">35%</div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="row">
-                     <div class="card ">
-                         <div class="card-title">
-                             <h3>Tecnólogo em Jogos digitais</h3>
-                         </div>
-                         <div class="image-container">
-                             <img class="icon2" src="IMG/icon2.png" alt="Imagem 2">
-                         </div>
-                     </div>
-                     <div class="card-details align-items-center">
-                         <p>
-                             No 2º semestre de Tecnólogo em Jogos Digitais, estou aprendendo a criar jogos interativos, 
-                             focando no design e desenvolvimento, e aprimorando minhas habilidades em programação 
-                             para oferecer experiências imersivas.
-                         </p>
-                         <div class="progress-bar-container">
-                             <div class="progress-bar">20%</div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             </section>
+             <section id="formacao" class="formation-section">
+                <div class="container">
+                    <div class="formacao-text">
+                        <h1>Formação</h1>
+                        <p>Passe o mouse para ver os detalhes da minha formação</p>
+                    </div>
+                    <div class="graduacao-container">
+                        <!-- Primeiro Card -->
+                        <div class="graduacao-card">
+                            <div class="graduacao-titulo">
+                                <h3>Ciências da Computação</h3>
+                            </div>
+                            <div class="graduacao-content">
+                                <div class="graduacao-image">
+                                    <img class="faculdade" src="IMG/icon1.png" alt="faculdade descomplica">
+                                </div>
+                                <div class="graduacao-texto">
+                                    <p class="text-center">
+                                        Cursando o 3º semestre de Ciências da Computação, adquiri conhecimentos em 
+                                        HTML5, CSS, Bootstrap e estou aprendendo JavaScript e Java.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar progress-bar1" data-progress="35">35%</div>
+                            </div>
+                        </div>
+                        <!-- Segundo Card -->
+                        <div class="graduacao-card">
+                            <div class="graduacao-titulo">
+                                <h3>Tecnólogo em Jogos Digitais</h3>
+                            </div>
+                            <div class="graduacao-content">
+                                <div class="graduacao-image">
+                                    <img class="faculdade" src="IMG/icon2.png" alt="faculdade estacio">
+                                </div>
+                                <div class="graduacao-texto">
+                                    <p class="text-center">
+                                        No 2º semestre de Tecnólogo em Jogos Digitais, estou aprendendo a criar jogos interativos, 
+                                        focando no design e desenvolvimento.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar progress-bar2" data-progress="20">20%</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>            
              <section class="container" id="habilidades"> 
                  <h2 class="text-center">Habilidades</h2>
                  <div class="row">

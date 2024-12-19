@@ -1,341 +1,340 @@
- body{
-     box-sizing: border-box;
-     font-family: Arial, sans-serif;
-     line-height: 1.6;
-     color: #ffffff;
-     background-color: #000000;
-     padding: 10px
- }
-
- .navegador{
-     color: white;
- }
-
- .logo-navbar{
-     height: 50px;
-     width: 50px;
- }
-
- .navegador h2{
+/*////////////////////////////////////////////FORMATAÇÃO GERAL//////////////////////////////////////////////////*/
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1,6;
     color:#ffffff;
- }
+    background-color: #000000;
+}
 
- .navegador a{
+/*////////////////////////////////////////////////NAVEGADOR////////////////////////////////////////////////////*/
+.navegador{
+    background-color: transparent;
+}
+
+.logo-navbar{
+    height: 10vh;
+    width: auto;
+}
+
+.navegador h2{
+    color: #ffffff;
+}
+
+.nav-link{
+    color: #ffffff;
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 13px;
-    color: #fff;
+    padding: 2vh 2vw;
+    font-size:1.1rem;
+    color: #ffffff;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     text-transform: uppercase;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito */
-    margin: 5px;
-    text-align: center;
- }
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+    margin: 2px 1px;
 
- .navegador a:hover{
-    color: #ffffff;
-    transform: scale(1.1); /* Aumenta o botão em 10% */
-    box-shadow: 0 5px 15px rgb(255, 255, 255); /* Adiciona sombra */
- }
+}
+
+.nav-link:hover{
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0.1vh 0.1vw;
+    padding: 1vh 1vw;
+    font-size: 19px;
+    transform: scale(0.5 0.5);
+    box-shadow: 5px 5px 15px white;
+}
 
 .navbar-toggler{
-    background-color:#1900ff;
+    background-color: #cecece;
+}
+
+@media (max-width: 768px){
+  .navegador a{
+    margin: 0.1vh 5vw;
+    padding: 1vh 4vw;
+  }
+
+  .navegador a:hover{
+    margin: 0.1vh 5vw;
+    padding: 1vh 4vw;
+    transform: scale(0.5 0.5);
+  }
+
+}
+
+/*////////////////////////////////////////////////HOME(BANNER)////////////////////////////////////////////////////*/
+
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: -1;
 }
 
 #home{
-    padding: 90px;
+    margin: 10vh 0vw 30vh;
 }
 
 
-.banner-bnt {
+.banner-text h4{
+    font-size: 25px;
+}
+
+.banner-text h1{
+    font-size: 55px;
+    line-height: 0.5;
+}
+
+.banner-text h5{
+    font-size: 20px;
+    display: flex;
+     text-align: left;
+
+}
+
+.banner-img{
+    width: 20vw;
+    height: autovh;
+    border-radius: 45%;
+    filter: drop-shadow(5px 5px 15px rgb(61, 61, 61));
+}
+
+.banner-btn{
     display: inline;
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    background-color: #ffffff;
+    padding: 0.5vh 0.3vw;
+    margin: 1vh 0.2vw;
+    font-size: 20px;
     border-radius: 25px;
     cursor: pointer;
+    background-color:transparent;
+    border-color: #ffffff;
+    color: #ffffff;
     text-transform: uppercase;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito */
-    margin: 2px;
-    text-align: center;
-    
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+    text-align: left;
 }
 
-.banner-bnt a{
+.banner a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.banner a:hover{
     text-decoration: none;
     color: #000000;
 }
 
-/* Efeito de zoom no hover */
-.banner-bnt:hover {
-    transform: scale(1.1); /* Aumenta o botão em 10% */
-    box-shadow: 0 5px 15px rgb(255, 255, 255); /* Adiciona sombra */
-    text-decoration: none;
+.banner-btn:hover{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.5rem;
+    padding: 0.5vh 0.3vw;
+    margin: 1vh 0.2vw;
+    transform: scale(2 2);
+    box-shadow: 5px 5px 15px white;
 }
+   
 
-/* Estilo para o link dentro do botão */
-.banner-link {
-    color: #fff;
-    text-decoration: none; /* Remove o sublinhado */
-    display: inline-block;
-    width: 100%; /* Faz o link preencher o botão */
-    height: 100%;
-}
-
-/* Efeito de foco (opcional para acessibilidade) */
-.banner-bnt:focus {
-    outline: none;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-}
-
- .banner-img{
-     width: 350px; 
-      height: 350px; 
-      border-radius: 50%; 
-      overflow: hidden; 
-      object-fit: cover; 
- }
-
- /* Define o fundo do header e section */
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 600px;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Coloca o efeito no fundo */
-}
-
-#home {
-    position: relative;
-    z-index: 1; /* Garante que o conteúdo fique acima */
-    color:white; /* Ajuste para garantir contraste */
-}
- 
- button{
+.icon1{
     background-color: #000000;
- }
+    margin: 2vh 1vw;
+    height:  9vh;
+    width: auto;
+    text-transform: uppercase;
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
 
- .social-icon {
-    display: flex; /* Para controle de alinhamento com flexbox */
-    justify-content: flex-end; /* Alinha o conteúdo à direita */
-}
-
-.align-items-right {
-    text-align: right; /* Garante que o conteúdo interno fique à direita */
-}
-
-.icon1 {
-    max-width: 50px; /* Ajusta a imagem ao tamanho do container */
-    height: 50px; /* Mantém a proporção da imagem */
 }
 
 .icon1:hover{
-    filter: drop-shadow( 1px 1px 20px white);
-    transform: scale(1.3); /* Efeito de zoom no card */
+    transform: scale(2 2);
+    filter: drop-shadow(5px 5px 15px white);
+
 }
 
-#sobre{
-    background-color: #000000;
+
+@media (max-width: 768px){
+    .banner-img{
+        width: 50vw;
+        height: auto;
+        border-radius: 45%;
+    }
+
+    .banner-btn{
+        padding: 0.5vh 0.3vw;
+        margin: 1vh 0.2vw;
+        font-size: 1rem;
+        background-color: #000000;
+        text-transform: uppercase;
+        transition: transform 0.3s ease , box-shadow 0.3s ease;
+    }
+
+    .banner-btn:hover{
+        background-color: #ffffff;
+        transform: scale(1 1);
+        font-size: 1.2rem;
+        box-shadow: 0 5px 15px #ffffff;
+    }
+    .social-icon img{
+        display:inline;
+        margin: 1vh 0vw;
+        width: 8vh;
+        height: auto;
+
+    }
+
+    #home{
+        margin: 5vh 0vw 25vh;
+    }
+
+    .banner-text h4{
+        font-size: 20px;
+    }
     
+    .banner-text h1{
+        font-size: 50px;
+    }
+    
+    .banner-text h5{
+        font-size: 15px;
+        display: flex;
+        text-align: left;
+    }
+}
+/*////////////////////////////////////////////////SOBRE MIM////////////////////////////////////////////////////*/
+
+.sobre-img{
+    width: auto;
+    height: 70vh;
+    margin: 5vh 2vw 20vh 1vw;
+    filter: drop-shadow(5px 5px 15px white);
 }
 
 .sobremim-text{
-    display: flex;               /* Ativa o Flexbox */
-    justify-content: center;     /* Centraliza horizontalmente */
-    align-items: center;         /* Centraliza verticalmente */
-    text-align: center;          /* Centraliza o texto no elemento */
-    height: 100%;                /* Ajusta a altura total do contêiner */
-    padding: 20px;               /* Adiciona espaçamento interno */
-    font-size: 16px;             /* Ajusta o tamanho da fonte */
-    line-height: 1.6;            /* Melhora o espaçamento entre linhas */
-    color: #ffffff;                 /* Cor do texto */
-    max-width: 600px;            /* Limita a largura máxima do texto */
-    margin: 0 auto;              /* Centraliza o texto horizontalmente */
-}
-
-/* Estilo da seção */
-.formation-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #000000;
-}
-
-.card-title{
-    color: #ffffff;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 100%;
-    max-width: 1200px;
-    text-align: center;
-}
-
-/* Texto inicial */
-.intro-text {
-    width: 100%;
     font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 40px;
+    margin: 5vh 2vw 20vh;
 }
 
-/* Estilo dos cards */
-.card {
+@media (max-width: 768px){
+    .sobre-img{
+        width: auto;
+        height: 35vh;
+        margin: 1vh 1vw 1vh;
+        filter: drop-shadow(5px 5px 15px white)
+    }
+    .sobremim-text{
+        font-size: 14px;
+        margin: 2vh 3vw 15vh
+    }
+}
+/*////////////////////////////////////////////////FORMAÇÃO////////////////////////////////////////////////////*/
+
+.graduacao-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 16px; 
+    justify-content: flex-start;
+    align-items: center;
+}
+.graduacao-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap; 
+    transition: all 0.3s ease;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden; 
+}
+
+.graduacao-card {
+    height: 50vh;
+    width: 60vw;
+    flex: 1; 
+    max-width: 45%; 
     position: relative;
+    padding: 16px;
+    border: 1px solid #000000;
+    border-radius: 8px;
     background-color: #000000;
-    width: 250px;
-    height: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    margin: 30px 0
-}
-
-.card:hover {
-    transform: scale(1.05); /* Efeito de zoom no card */
-}
-
-/* Container da imagem */
-.image-container {
-    position: relative;
-}
-
-.icon2{
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    filter: drop-shadow( 1px 1px 20px white);
-    
-}
-
-
-
-/* Detalhes fora do card */
-.card-details {
-    width: 250px;
     text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0s 0.3s;
-    margin-top: 10px;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
 }
 
-.card:hover + .card-details {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.3s ease;
+
+.graduacao-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Barra de progresso */
+.graduacao-card:hover .graduacao-content {
+    opacity: 1; 
+    height: auto; 
+    flex-direction: row; 
+    gap: 16px; 
+}
+
+.graduacao-image {
+    flex-shrink: 0; 
+}
+
+.graduacao-image img {
+    width: 20vw;
+    height: auto;
+}
+
+.graduacao-texto {
+    text-align:right;
+    font-size: 15px;
+    line-height: 1.5;
+    flex:1;
+}
+
 .progress-bar-container {
     width: 100%;
-    height: 18px;
-    background-color: rgb(255, 255, 255);
+    height: 4vh;
+    background-color: #ffffff; 
     border-radius: 5px;
-    overflow: hidden;
-    margin-top: 10px;
+    overflow: hidden; 
+    margin: 10px 0; 
 }
+
 
 .progress-bar {
-    width: 0%;
+    width: 0; 
     height: 100%;
-    background-color: #001aff;
+    background-color: #4d4d4d; 
     border-radius: 5px;
-    transition: width 1s ease;
-}
-
-/* Anima a barra de progresso no hover */
-.card:hover + .card-details .progress-bar {
-    width: 20%; /* A barra vai até 25% */
-    
-}
-
-
-#habilidades {
-    margin-top: 50px;
-}
-
-#habilidades h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.habilidade {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Estilo de cada habilidade */
-.hb {
-    background-color: #000000;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #ffffff1a;
-    width: 120px;
-    height: 150px;
-    display: flex; /* Flexbox para centralizar conteúdo */
-    flex-direction: column;
-    justify-content: center; /* Alinha verticalmente */
-    align-items: center; /* Alinha horizontalmente */
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.hb:hover {
-    transform: translateY(-15px);
-    
-}
-
-
-.hb img {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 5px;
-
-}
-
-.hb img:hover{
-    filter: drop-shadow( 1px 1px 20px white);
-}
-.hb p {
-    margin: 0;
     color: #ffffff;
-    font-size: 1em;
     text-align: center;
+    line-height: 4vh; 
+    animation: fillProgress 2s ease-in-out forwards; 
 }
 
-/* Alinhamento da descrição */
-.card-dt {
-    display: flex;
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    height: 100%; /* Ocupa toda a altura */
+.progress-bar1 {
+    --progress-width: 35%; 
 }
 
-#descricao {
-    font-size: 16px;
-    font-style: italic;
-    color: #ffffff;
-    display: flex;
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    height: 200px; /* Define altura do container */
-    text-align: center;
-    margin: 0;
+.progress-bar2 {
+    --progress-width: 20%; 
+}
+
+
+@keyframes fillProgress {
+    to {
+        width: var(--progress-width, 100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .graduacao-card {
+        max-width: 100%; 
+    }
 }

@@ -2,7 +2,7 @@ particlesJS("particles-js",
     {
         "particles": {
             "number": {
-                "value": 80,
+                "value": 140,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -140,3 +140,5 @@ function showDescricao(texto) {
     const descricao = document.getElementById('descricao');
     descricao.textContent = texto;
 }
+
+document.querySelector('.navbar-toggler-icon').style.backgroundColor = 'blue';
