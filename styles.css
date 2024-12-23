@@ -209,13 +209,15 @@ body{
 .sobre-img{
     width: auto;
     height: 70vh;
-    margin: 5vh 2vw 20vh 1vw;
+    margin: 5vh 1vw 20vh 1vw;
+    padding: 1vh;
     filter: drop-shadow(5px 5px 15px white);
 }
 
 .sobremim-text{
-    font-size: 18px;
-    margin: 5vh 2vw 20vh;
+    font-size: 15px;
+    margin: 5vh 1vw 20vh;
+    padding: 10vh 0vw;
 }
 
 @media (max-width: 768px){
@@ -226,6 +228,7 @@ body{
         filter: drop-shadow(5px 5px 15px white)
     }
     .sobremim-text{
+        padding: 0vh;
         font-size: 14px;
         margin: 2vh 3vw 15vh
     }
@@ -325,7 +328,7 @@ body{
 .progress-bar2 {
     --progress-width: 20%; 
 }
-
+/*////////////////////////////////////////////////FORMAÇÃO////////////////////////////////////////////////////*/
 
 @keyframes fillProgress {
     to {
@@ -337,4 +340,114 @@ body{
     .graduacao-card {
         max-width: 100%; 
     }
+}
+#habilidades{
+    margin: 5vh 1vw 10vh;
+}
+    .habilidade{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top:8vh;
+    }
+
+    .hb{
+        
+        margin: 0vh 0vw;
+        padding: 1vh 3vh;
+    }
+
+.hb p{
+    text-align: center;
+}
+
+.hb img{
+    height:11vh;
+    width: 8vw;
+    filter: grayscale(100%);
+}
+
+.hb img:hover{
+    filter: none;
+}
+
+.teste{
+    display: flex;
+    justify-content: center;
+    padding: 15vh 1vw;
+}
+
+.container{
+    padding: 2vh 1vw;
+}
+
+.projeto{
+    color: #000000;
+    text-align: center;
+    display: grid;
+}
+
+.projeto-img{
+    width: 30vw;
+    height: 30vh;
+    margin: 1vh 1vw 2vh 1vw;
+    padding: 1vh;
+}
+
+.projeto-p{
+    font-size: 12px;
+    margin: 1vh 1vw 2vh;
+    padding: 1vh 1vw;
+    color: #ffffff;
+}
+
+.projeto-p p{
+    margin: 0vh 0vw ;
+}
+
+
+.projeto-p img{
+    width: 3vw;
+    margin:5px;
+
+}
+
+.carousel{
+    background-color: rgb(98, 0, 255);
+}
+
+.carousel-item{
+    width: 80vw;
+    height: 80vh;
+}
+
+.carousel-indicators{
+    background-color: #000000;
+}
+
+.part{
+    display:inline-flex;
+    
+    display: flex;
+    padding: 3vh;
+}
+
+.part1{
+    padding: 5vh;
+    
+    height:30vh;
+}
+
+.subpart img{
+    height: 7vh;
+}
+
+.part2{
+    
+    height: 30vh;
+}
+
+.part3{
+    
+    height: 30vh;
 }
