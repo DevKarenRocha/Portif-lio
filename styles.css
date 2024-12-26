@@ -47,7 +47,7 @@ body{
 }
 
 .navbar-toggler{
-    background-color: #cecece;
+    background-color: #000000;
 }
 
 @media (max-width: 768px){
@@ -76,7 +76,7 @@ body{
 }
 
 #home{
-    margin: 10vh 0vw 30vh;
+    margin: 10vh 0vw 1vh;
 }
 
 
@@ -209,7 +209,7 @@ body{
 .sobre-img{
     width: auto;
     height: 70vh;
-    margin: 5vh 1vw 20vh 1vw;
+    margin: 5vh 1vw 1vh 1vw;
     padding: 1vh;
     filter: drop-shadow(5px 5px 15px white);
 }
@@ -235,101 +235,6 @@ body{
 }
 /*////////////////////////////////////////////////FORMAÇÃO////////////////////////////////////////////////////*/
 
-.graduacao-container {
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 16px; 
-    justify-content: flex-start;
-    align-items: center;
-}
-.graduacao-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap:wrap; 
-    transition: all 0.3s ease;
-    opacity: 0; 
-    height: 0;
-    overflow: hidden; 
-}
-
-.graduacao-card {
-    height: 50vh;
-    width: 60vw;
-    flex: 1; 
-    max-width: 45%; 
-    position: relative;
-    padding: 16px;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    background-color: #000000;
-    text-align: center;
-    overflow: hidden; 
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- 
-}
-
-
-.graduacao-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.graduacao-card:hover .graduacao-content {
-    opacity: 1; 
-    height: auto; 
-    flex-direction: row; 
-    gap: 16px; 
-}
-
-.graduacao-image {
-    flex-shrink: 0; 
-}
-
-.graduacao-image img {
-    width: 20vw;
-    height: auto;
-}
-
-.graduacao-texto {
-    text-align:right;
-    font-size: 15px;
-    line-height: 1.5;
-    flex:1;
-}
-
-.progress-bar-container {
-    width: 100%;
-    height: 4vh;
-    background-color: #ffffff; 
-    border-radius: 5px;
-    overflow: hidden; 
-    margin: 10px 0; 
-}
-
-
-.progress-bar {
-    width: 0; 
-    height: 100%;
-    background-color: #4d4d4d; 
-    border-radius: 5px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 4vh; 
-    animation: fillProgress 2s ease-in-out forwards; 
-}
-
-.progress-bar1 {
-    --progress-width: 35%; 
-}
-
-.progress-bar2 {
-    --progress-width: 20%; 
-}
-/*////////////////////////////////////////////////FORMAÇÃO////////////////////////////////////////////////////*/
-
 @keyframes fillProgress {
     to {
         width: var(--progress-width, 100%);
@@ -342,13 +247,14 @@ body{
     }
 }
 #habilidades{
-    margin: 5vh 1vw 10vh;
+    margin: 5vh 1vw 20vh;
 }
     .habilidade{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         margin-top:8vh;
+        margin-bottom: 2vh;
     }
 
     .hb{
@@ -369,47 +275,62 @@ body{
 
 .hb img:hover{
     filter: none;
+    transform: scale(0.5 0.5);
+    filter: drop-shadow( -3px 6px 10px white );
 }
 
 .teste{
     display: flex;
     justify-content: center;
-    padding: 15vh 1vw;
-}
-
-.container{
-    padding: 2vh 1vw;
+    padding: 20vh 3vw;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
 }
 
 .projeto{
-    color: #000000;
-    text-align: center;
-    display: grid;
+    padding: 5vh 5vw 20vh 1vw;
+
 }
 
 .projeto-img{
-    width: 30vw;
-    height: 30vh;
-    margin: 1vh 1vw 2vh 1vw;
-    padding: 1vh;
+    height: 60vh;
+    width: 45vw;
+    padding: 3vh;
+    margin: 5vh 2vw 0vh 5vw;
+    filter: drop-shadow( 5px 5px 15px white);
 }
 
 .projeto-p{
-    font-size: 12px;
-    margin: 1vh 1vw 2vh;
-    padding: 1vh 1vw;
+    margin: 20vh 1vw 0vh 2vw;
+    padding: 3vh;
+}
+.bugg{
+   height: 5vh;
+   margin-bottom: 1vh;
+}
+
+.projeto-btn{
+    background-color: #000000;
     color: #ffffff;
+    width: 10vw;
+    align-items: center;
 }
 
-.projeto-p p{
-    margin: 0vh 0vw ;
+.projeto-footer{
+    padding: 5vh 2vw;
+    display: flex;
+    justify-content: center;
+    margin: 5vh 2vw 1vh 10vw;
 }
 
+.bnt-footer{
+    height: 6vh;
+    width: 20vw;
+    font-size: 20px;
+}
 
-.projeto-p img{
-    width: 3vw;
-    margin:5px;
-
+.projeto-btn img{
+    height: 3vh;
 }
 
 .carousel{
@@ -450,4 +371,112 @@ body{
 .part3{
     
     height: 30vh;
+}
+
+#certificações {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+#slider {
+    position: relative;
+    width: 70%;
+    height: 35vh;
+    margin: 80px auto;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slider label {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    transform-origin: center;
+    transform: scale(0.8) translateX(-50%);
+}
+#slider label img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Slider ativo */
+#s1:checked ~ #slider1,
+#s2:checked ~ #slider2,
+#s3:checked ~ #slider3,
+#s4:checked ~ #slider4,
+#s5:checked ~ #slider5 {
+    opacity: 1;
+    transform: scale(1) translateX(-50%);
+    z-index: 2;
+}
+
+/* Próximo slider */
+#s1:checked ~ #slider2,
+#s2:checked ~ #slider3,
+#s3:checked ~ #slider4,
+#s4:checked ~ #slider5,
+#s5:checked ~ #slider1 {
+    opacity: 0.6;
+    transform: scale(0.9) translateX(50%);
+    z-index: 1;
+}
+
+/* Slider anterior */
+#s1:checked ~ #slider5,
+#s2:checked ~ #slider1,
+#s3:checked ~ #slider2,
+#s4:checked ~ #slider3,
+#s5:checked ~ #slider4 {
+    opacity: 0.6;
+    transform: scale(0.9) translateX(-160%);
+    z-index: 1;
+}
+
+/* Outros sliders (fora do alcance) */
+#s1:checked ~ #slider3,
+#s2:checked ~ #slider4,
+#s3:checked ~ #slider5,
+#s4:checked ~ #slider1,
+#s5:checked ~ #slider2 {
+    opacity: 0.2;
+    transform: scale(0.7) translateX(-90%);
+    z-index: 0;
+}
+
+#navigation {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navigation button {
+    background-color: #fff9f9;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    filter: drop-shadow(5px 5px 15px white);
+}
+
+#navigation button:hover {
+    background-color: #ffffff;
 }
