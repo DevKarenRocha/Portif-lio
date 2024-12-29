@@ -143,3 +143,4 @@ function showDescricao(texto) {
 
 document.querySelector('.navbar-toggler-icon').style.backgroundColor = 'blue';
 
+

@@ -141,9 +141,11 @@ body{
 
 .icon1{
     background-color: #000000;
-    margin: 2vh 1vw;
-    height:  9vh;
+    margin: 2vh 0vw;
+    height:  13vh;
     width: auto;
+    border-radius: 50%;
+    padding: 1vh;
     text-transform: uppercase;
     transition: transform 0.3s ease , box-shadow 0.3s ease;
 
@@ -384,8 +386,8 @@ body{
 
 #slider {
     position: relative;
-    width: 70%;
-    height: 35vh;
+    width: 90%;
+    height: 80vh;
     margin: 80px auto;
     perspective: 1400px;
     transform-style: preserve-3d;
@@ -410,7 +412,8 @@ input[type="radio"] {
     transform: scale(0.8) translateX(-50%);
 }
 #slider label img {
-    width: 100%;
+    width:100%;
+    height: 80vh;
     border-radius: 10px;
 }
 
@@ -419,7 +422,8 @@ input[type="radio"] {
 #s2:checked ~ #slider2,
 #s3:checked ~ #slider3,
 #s4:checked ~ #slider4,
-#s5:checked ~ #slider5 {
+#s5:checked ~ #slider5,
+#s6:checked ~ #slider6 {
     opacity: 1;
     transform: scale(1) translateX(-50%);
     z-index: 2;
@@ -430,18 +434,20 @@ input[type="radio"] {
 #s2:checked ~ #slider3,
 #s3:checked ~ #slider4,
 #s4:checked ~ #slider5,
-#s5:checked ~ #slider1 {
+#s5:checked ~ #slider6,
+#s6:checked ~ #slider1 {
     opacity: 0.6;
     transform: scale(0.9) translateX(50%);
     z-index: 1;
 }
 
 /* Slider anterior */
-#s1:checked ~ #slider5,
+#s1:checked ~ #slider6,
 #s2:checked ~ #slider1,
 #s3:checked ~ #slider2,
 #s4:checked ~ #slider3,
-#s5:checked ~ #slider4 {
+#s5:checked ~ #slider4,
+#s6:checked ~ #slider5{
     opacity: 0.6;
     transform: scale(0.9) translateX(-160%);
     z-index: 1;
@@ -451,32 +457,10 @@ input[type="radio"] {
 #s1:checked ~ #slider3,
 #s2:checked ~ #slider4,
 #s3:checked ~ #slider5,
-#s4:checked ~ #slider1,
-#s5:checked ~ #slider2 {
+#s4:checked ~ #slider6,
+#s5:checked ~ #slider1,
+#s6:checked ~ #slider2{
     opacity: 0.2;
     transform: scale(0.7) translateX(-90%);
     z-index: 0;
-}
-
-#navigation {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#navigation button {
-    background-color: #fff9f9;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    filter: drop-shadow(5px 5px 15px white);
-}
-
-#navigation button:hover {
-    background-color: #ffffff;
 }
