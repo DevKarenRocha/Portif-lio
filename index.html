@@ -17,12 +17,12 @@
      <body>
 
          <!--NAVEGADOR--> 
-         <header class="navegador">
+         <header id="navegador">
              <nav class="navbar navbar-expand-lg">
-                 <div class="container-fluid">
+                 <div class="container">
                      <div class="navbar-brand d-flex align-items-center">
                          <figure>
-                             <img class="logo-navbar me-2" src="IMG/home-icon-logo.png" alt="logo">
+                             <img class="logo-navbar me-2" src="IMG/home-icon-logo.png" alt="logo" height="60vh">
                          </figure>
                          <h2>Karen Rocha </h2>
                      </div>
@@ -34,7 +34,7 @@
                              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                              <li class="nav-item"><a class="nav-link" href="#sobremim">Sobre mim</a></li>
                              <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                             <li class="nav-item"><a class="nav-link" href="#portifolio">Portifólio</a></li>
+                             <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
                              <li class="nav-item"><a class="nav-link" href="#certificações">Certificações</a></li>
                          </ul>
                      </div>
@@ -46,73 +46,75 @@
          <div id="particles-js"></div>
              <!--HOME-->
              <section id="home">
-                <div class="banner">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <!-- Imagem -->
-                            <div class="col-md-6 text-center order-1 order-md-2">
-                                <figure>
-                                    <img class="banner-img" src="IMG/foto1.png" alt="foto-perfil">
-                                </figure>
-                            </div>
-                            <!-- Texto -->
-                            <div class="col-md-6 d-flex flex-column align-items-center text-center text-md-start order-2 order-md-1">
-                                <div class="banner-text">
+                 <div class="container">
+                     <div class="row align-items-center">
+                         <!-- Imagem -->
+                         <div class="col-6 text-center order-1 order-md-2">
+                             <figure>
+                                 <img class="home-img" src="IMG/foto1.jpeg" alt="foto-perfil" height="300vh">
+                             </figure>
+                         </div>
+                         <!-- Texto -->
+                         <div class="col-6 d-flex flex-column align-items-center text-center text-md-start order-2 order-md-1">
+                             <div class="home-text">
                                     <h5>Olá, meu nome é</h5>
                                     <h1>Karen Rocha</h1>
-                                    <h4>Front-end Developer</h4>
+                                    <h4>Front end Developer</h4>
                                 </div>
                                 <div>
-                                    <button class="banner-btn"><a class="banner-link" href="">Currículo</a></button>
-                                    <button class="banner-btn"><a class="banner-link" href="">Contato</a></button>
-                                    <button class="banner-btn"><a class="banner-link" href="">Portfólio</a></button>
+                                     <button class="home-btn"><a class="home-link" href="KarenRocha.pdf" id="downloadLink">Currículo</a></button>
+                                    <button class="home-btn"><a class="home-link" href="contato.pdf" target="_blank">Contato</a></button>
+                                    <button class="home-btn"><a class="home-link" href="portifolio.html">Portfólio</a></button>
                                 </div>
                             </div>
                         </div>
                          <div class="social-icon d-flex justify-content-center justify-content-lg-end mt-3">
-                            <a class="icon me-2" href="https://www.linkedin.com/in/karen-cristina-rocha-braga-61505928b" target="_blank" rel="noopener noreferrer">
-                                <img class="icon1" src="IMG/home-icon-in.png" alt="logo-linkedin">
+                             <a class="home-icon me-2" href="https://www.linkedin.com/in/karen-cristina-rocha-braga-61505928b" target="_blank" rel="noopener noreferrer">
+                                 <img  src="IMG/home-icon-in.png" alt="logo-linkedin" height="50vh">
                              </a>
-                             <a class="icon me-2" href="https://www.instagram.com/dev.karenrocha/" target="_blank" rel="noopener noreferrer">
-                                 <img class="icon1" src="IMG/home-icon-ig.png" alt="logo-instagram">
+                             <a class="home-icon me-2" href="https://www.instagram.com/dev.karenrocha/" target="_blank" rel="noopener noreferrer">
+                                 <img  src="IMG/home-icon-ig.png" alt="logo-instagram" height="50vh">
                              </a>
-                             <a class="icon me-2" href="https://github.com/DevKarenRocha" target="_blank" rel="noopener noreferrer">
-                                 <img class="icon1" src="IMG/home-icon-git.png" alt="logo-github">
-                             </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                             <a class="home-icon me-2" href="https://github.com/DevKarenRocha" target="_blank" rel="noopener noreferrer">
+                                 <img  src="IMG/home-icon-github.png" alt="logo-github" height="50vh">
+                         </a>
+                     </div>
+                 </div>
+             </section>
         
                   
              <section id="sobremim">
-                 <div class="container"data-aos="fade-up"data-aos="flip-left" data-aos-duration="3000" data-aos-delay="200" data-aos-offset="200">
+                 <div class="container">
                      <div class="sobre-titulo">
                      <h1 class="text-center">Sobre mim</h1>
                     </div>
                      <div class="row align-items-right">
                          <div class="col-md-6 text-center">
                              <figure>
-                                 <img class="sobre-img" src="IMG/foto2.png" alt="fotoperfil2">
+                                 <img class="sobre-img" src="IMG/foto2.jpeg" alt="fotoperfil2">
                              </figure>
                          </div>
                          <div class="col-md-6 text-center">
                              <p class="sobremim-text">
-                                 Sou uma desenvolvedora full stack em formação, apaixonada por criar soluções digitais que conectam   
-                                 e experiência do usuário de forma eficiente e intuitiva. Atualmente, estou aprimorando minhas 
-                                 habilidades no front-end, trabalhando com tecnologias como HTML, CSS, e JavaScript.<br><br>
-                                 Com uma abordagem curiosa e dedicada, gosto de enfrentar desafios complexos, buscando sempre 
-                                 o aprendizado  contínuo e a melhoria do meu código. Minha missão é desenvolver aplicações robustas 
-                                 e escaláveis que não só  resolvam problemas, mas também proporcionem uma experiência de usuário fluida e agradável.
+                                 Sou uma desenvolvedora <strong>FULL STACK</strong> em formação, apaixonada por criar soluções digitais que combinam <strong>TECNOLOGIA</strong>  e 
+                                 <strong>EXPERIÊNCIA DO USUÁRIO</strong>  de forma eficiente. Focada no <strong>FRONT-END</strong> , trabalho com <strong>HTML, CSS, JAVASCRIPT</strong>  e frameworks 
+                                 como <strong>BOOTSTRAP </strong> e <strong>TAILWIND CSS</strong>  para criar interfaces modernas e funcionais, enquanto amplio conhecimentos em 
+                                 <strong>JAVA</strong>  e <strong>PYTHON</strong> , visando atuar no <strong>BACK-END</strong>  no futuro.<br><br>
+                                 Atualmente cursando o segundo semestre de  <strong>CIÊNCIAS DA COMPUTAÇÃO</strong>  e o início do segundo semestre de <strong> TECNÓLOGO EM JOGOS DIGITAIS</strong>, 
+                                 minhas formações fortalecem minha visão técnica e criativa para desenvolver <strong>SOLUÇÕES DIGITAIS</strong>  completas. Com uma 
+                                 abordagem curiosa e comprometida, busco o <strong>APRENDIZADO CONTÍNUO</strong>  para criar aplicações robustas que oferecem experiências 
+                                 agradáveis e resolvem problemas de forma eficaz.
                              </p>
                          </div>
                      </div>
                  </div>
              </section>            
-             <section id="habilidades"class="container" data-aos="fade-up"data-aos="flip-left" data-aos-duration="3000" data-aos-delay="200" data-aos-offset="200"> 
-                <h2 class="text-center">Habilidades</h2> 
+             <section id="habilidades"class="container" > 
+                <div class="hablilidade-titulo">
+                    <h2 class="text-center">Habilidades</h2> 
+                </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-6">
                         <div class="habilidade">
                             <div class="hb" onmouseover="showDescricao
                                     ('HTML5 (HyperText Markup Language, versão 5) HTML5 é a versão mais recente da linguagem de marcação usada para estruturar páginas web.')">
@@ -152,13 +154,10 @@
                                     ('GitHub é uma plataforma online baseada em Git, que oferece repositórios para armazenar, compartilhar e colaborar em código, além de funcionalidades como controle de versão, issue tracking e integração contínua.')">
                                 <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Github">
                                 <p>Github</p>
-                            </div> 
-                            <div class="hb" onmouseover="showDescricao('tecnologia1')">
-                        <img src="IMG/+.png" alt="Github">
-                    </div> 
+                            </div>  
                         </div>
                     </div>
-                    <div class="teste col-md-6" onmouseover="showDescricao ('Passe o mouse por cima de alguma habilidade para ler a descrição.')">
+                    <div class="teste col-6" onmouseover="showDescricao ('Passe o mouse por cima de alguma habilidade para ler a descrição.')">
                         <div class="card-dt">
                             <p id="descricao" class="text-center">
                                 Passe o mouse por cima de alguma habilidade para ler a descrição.
@@ -167,18 +166,18 @@
                     </div>
                 </div>
             </section> 
-            <section >
+            <section id="projetos">
                 <div class="container">
                     <div class="projeto">
-                    <h3 class="text-center" data-aos="fade-up"data-aos="flip-left" data-aos-duration="3000" data-aos-delay="200" data-aos-offset="200">PROJETOS</h3>
-                    <p class="text-center" data-aos="fade-up"data-aos="flip-left" data-aos-duration="3000" data-aos-delay="200" data-aos-offset="200">veja alguns dos meus projetos</p>
+                    <h3 class="text-center">PROJETOS</h3>
+                    <p class="text-center" >veja alguns dos meus projetos</p>
                     <div class="row align-items-right">
-                         <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500" data-aos-offset="300"class="col-md-6 text-center">
+                         <div class="col-md-6 text-center">
                             <figure>
                                 <img class="projeto-img" src="IMG/pjt1.png" alt="fotoperfil2">
                             </figure>
                          </div>
-                         <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500" data-aos-offset="300">
+                         <div class="col-6 text-center" >
                             <div class="projeto-p">
                                  <p>
                                      Sou uma desenvolvedora full stack em formação, apaixonada por criar soluções digitais que 
@@ -191,12 +190,12 @@
                                  <button class="projeto-btn">Ver projeto</button>
                              </div> 
                         </div>
-                        <div class="col-md-6 text-center" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500" data-aos-offset="300">
+                        <div class="col-6 text-center" >
                             <figure>
                                 <img class="projeto-img" src="IMG/pjt2.png" alt="fotoperfil2">
                             </figure>
                          </div>
-                         <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500" data-aos-offset="300">
+                         <div class="col-6 text-center">
                             <div class="projeto-p">
                                  <p>
                                      Sou uma desenvolvedora full stack em formação, apaixonada por criar soluções digitais que 
@@ -209,12 +208,12 @@
                                  <button class="projeto-btn">Ver projeto</button>
                              </div> 
                         </div>
-                        <div class="col-md-6 text-center" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500" data-aos-offset="300">
+                        <div class="col-6 text-center" >
                             <figure>
                                 <img class="projeto-img" src="IMG/em_breve.png" alt="fotoperfil2">
                             </figure>
                          </div>
-                         <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500" data-aos-offset="300">
+                         <div class="col-6 text-center">
                             <div class="projeto-p">
                                  <p>
                                      Sou uma desenvolvedora full stack em formação, apaixonada por criar soluções digitais que 
@@ -235,39 +234,40 @@
                 </div>
                 </div>
              </section>
-             <section id="certificações">
-                <div id="slider">
-                    <input type="radio" name="slider" id="s1" checked />
-                    <input type="radio" name="slider" id="s2" />
-                    <input type="radio" name="slider" id="s3" />
-                    <input type="radio" name="slider" id="s4" />
-                    <input type="radio" name="slider" id="s5" />
-                    <input type="radio" name="slider" id="s6" />
-
-                    <label for="s1" id="slider1">
-                        <img src="PDFs/poo.png" alt="Certificação 1">
-                    </label>
-                    <label for="s2" id="slider2">
-                        <img src="PDFs/logicadeprogramaçao.jpg" alt="Certificação 2">
-                    </label>
-                    <label for="s3" id="slider3">
-                        <img src="PDFs/Competências Essenciais _ Karen Cristina Rocha Braga _ 09_08_2024_page-0001.jpg" alt="Certificação 3">
-                    </label>
-                    <label for="s4" id="slider4">
-                        <img src="PDFs/logicadeprogramaçao.jpg" alt="Certificação 4">
-                    </label>
-                    <label for="s5" id="slider5">
-                        <img src="PDFs/fundamentosdeti.jpg" alt="Certificação 5">
-                    </label>
-                    <label for="s6" id="slider6">
-                        <img src="PDFs/LGPD.jpg" alt="Certificação 6">
-                    </label>
-                    
+             <section id="certificacoes">
+                <div class="container">
+                    <div id="slider">
+                        <input type="radio" name="slider" id="s1" checked />
+                        <input type="radio" name="slider" id="s2" />
+                        <input type="radio" name="slider" id="s3" />
+                        <input type="radio" name="slider" id="s4" />
+                        <input type="radio" name="slider" id="s5" />
+                        <input type="radio" name="slider" id="s6" />
+    
+                        <label for="s1" id="slider1">
+                            <img src="PDFs/poo.png" alt="Certificação 1">
+                        </label>
+                        <label for="s2" id="slider2">
+                            <img src="PDFs/logicadeprogramaçao.jpg" alt="Certificação 2">
+                        </label>
+                        <label for="s3" id="slider3">
+                            <img src="PDFs/Competências Essenciais _ Karen Cristina Rocha Braga _ 09_08_2024_page-0001.jpg" alt="Certificação 3">
+                        </label>
+                        <label for="s4" id="slider4">
+                            <img src="PDFs/logicadeprogramaçao.jpg" alt="Certificação 4">
+                        </label>
+                        <label for="s5" id="slider5">
+                            <img src="PDFs/fundamentosdeti.jpg" alt="Certificação 5">
+                        </label>
+                        <label for="s6" id="slider6">
+                            <img src="PDFs/LGPD.jpg" alt="Certificação 6">
+                        </label>
+                   </div>
                 </div>
             </section>
             
          </main>
-         <footer class="container-fluid">
+         <footer id="footer" class="container">
              <div class="part">
                  <div class="part1 col-4"> 
                      <div class="subpart">
@@ -283,7 +283,7 @@
                  </div>
                  <div class="part2 col-4"> 
                     <div>
-
+                        <p>Visitante número: <span id="counter">0</span></p>
                     </div>
                 </div>
                 <div class="part3 col-4"> 
@@ -293,6 +293,17 @@
                 </div>
              </div>
          </footer>
+         <script>
+            // Função para atualizar o contador de acessos
+            async function updateVisitCount() {
+              const response = await fetch('/api/incrementar');
+              const data = await response.json();
+              document.getElementById('counter').textContent = data.count;
+            }
+        
+            // Chama a função quando a página for carregada
+            window.onload = updateVisitCount;
+          </script>
          <script>
             function showDescricao(texto) {
                 document.getElementById('descricao').innerText = texto;
@@ -310,6 +321,47 @@
         
          <script src="script.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+         <script>
+            document.getElementById('downloadLink').addEventListener('click', function (event) {
+            // Baixar o arquivo
+            const link = document.createElement('a');
+            link.href = 'KarenRocha.pdf';
+            link.download = 'KarenRocha.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        
+            // Abrir o arquivo em uma nova aba
+            setTimeout(() => {
+              window.open('KarenRocha.pdf', '_blank');
+            }, 500); // Pequeno atraso para garantir o download
+          });
+          </script>
+          <script>
+            // Função que recupera o número de acessos armazenados
+            function updateVisitCount() {
+              // Verifica se já existe um contador no localStorage
+              let visitCount = localStorage.getItem('visitCount');
+              
+              // Se não houver, inicializa com 0
+              if (!visitCount) {
+                visitCount = 0;
+              }
+              
+              // Incrementa o contador
+              visitCount++;
+              
+              // Armazena o novo valor no localStorage
+              localStorage.setItem('visitCount', visitCount);
+              
+              // Atualiza a página com o contador de acessos
+              document.getElementById('counter').textContent = visitCount;
+            }
+            
+            // Chama a função assim que a página for carregada
+            window.onload = updateVisitCount;
+          </script>
+          
      </body>
      <script>
         AOS.init();

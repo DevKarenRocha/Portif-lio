@@ -2,10 +2,10 @@ particlesJS("particles-js",
     {
         "particles": {
             "number": {
-                "value": 140,
+                "value": 180,
                 "density": {
                     "enable": true,
-                    "value_area": 800
+                    "value_area": 700
                 }
             },
             "color": {
@@ -55,7 +55,7 @@ particlesJS("particles-js",
             },
             "move": {
     "enable": true,
-    "speed": 2, // Velocidade reduzida (antes era 6)
+    "speed": 2, // Velocidade 
     "direction": "none",
     "random": false,
     "straight": false,
