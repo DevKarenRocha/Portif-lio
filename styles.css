@@ -6,9 +6,9 @@
          background-color: #000000;
          }
 
-    img{
-        height: 1vh;
-    }
+     img{
+         height: 1vh;
+         } 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ANIMAÇÃO_FUNDO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
      #particles-js{
          position: absolute;
@@ -20,23 +20,22 @@
          }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVEGADOR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
      .navegador{
-         background-color: transparent;
          padding:0vh;
          margin: 1vh 1vw 1vh 5vw;
          height: 10vh;
          font-size: 1.2rem;
-         background-color: #ff0000;
+         background-color: transparent;
          }
 
      .navbar h2{
          color: #ffffff;
          }
 
-     .logo-navbar{
+     .nav-logo{
          height: 7vh;
          filter: grayscale();
          }
-    
+
      .nav-item{
          margin: 0vh 0.4vw;
          padding: 0vh;
@@ -63,9 +62,9 @@
          }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HOME~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
      #home{
-        margin: 1vh 1vw 1vh 5vw;
+         background-color: transparent;
+         margin: 1vh 5vw 10vh 5vw;
          padding: 10vh 2vw;
-         background-color: #ff0000;
          }
 
      .home-img{
@@ -82,54 +81,52 @@
      .home-text h1{
          line-height: 0.5;
          font-size:3rem;
-         height:8vh;
          text-align: center;
          width: 30vw;
-         height: 5vh;
+         height: 8vh;
          font-weight: bold;
-     }
+         }
 
      .home-text h5{
-        line-height: 1.5;
-        font-size:1.1rem; 
-     }
+         line-height: 1.5;
+         font-size:1.1rem; 
+         }
 
      .home-text h4{
-        line-height: 0.5;
-        font-weight:lighter;
-        font-size:1.8rem;  
-     }
+         line-height: 0.5;
+         font-weight:lighter;
+         font-size:1.8rem;  
+         }
 
      .home-link{
-      padding: 0vh 1vw;
-      text-decoration: none;
-      color: #ffffff;
-      border-radius: 25px;
-      font-size: 1.4rem;
-    }
+         padding: 0vh 1vw;
+         text-decoration: none;
+         color: #ffffff;
+         border-radius: 25px;
+         font-size: 1.4rem;
+         }
 
-    .home-link:hover{
-        text-decoration: none;
-        color: #ffffff;
+     .home-link:hover{
+         text-decoration: none;
+         color: #ffffff;
          background-color: #000000;
          padding: 1vh;
          font-size: 1.5rem;
          filter: drop-shadow(0px 2px 15px #ffffff);
-    }
+         }
 
-    .home-btn{
-        background-color: transparent;
-        padding: 0vh 0vw;
-        border-radius: 25px;
-        border: 2px solid #ffffff;
-        margin: 1vh 0vw;
-    }
+     .home-btn{
+         background-color: transparent;
+         padding: 0vh 0vw;
+         border-radius: 25px;
+         border: 2px solid #ffffff;
+         margin: 1vh 0vw;
+         }
 
-    .home-btn:hover{
-        border: none;
-        filter: drop-shadow(0px 2px 10px #ffffff);
-        
-    }
+     .home-btn:hover{
+         border: none;
+         filter: drop-shadow(0px 2px 10px #ffffff);
+         }
 
      .home-icon img{
          height: 8vh;
@@ -142,202 +139,327 @@
          }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SOBRE_MIM~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
      #sobremim{
-        margin: 1vh 1vw 1vh 5vw;
-        padding: 0vh;
-        background-color: red;
-        }
-
-.sobre-titulo{
-     margin: 4vh;
-}
-
-.sobremim-text{
-    background-color: blue;
-}
-    .sobre-img{
-        height: 70vh;
-        width: 40vw;
-    }
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HABILIDADES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-     #habilidades{
-         margin: 1vh 1vw 1vh 1vw;
-        background-color: red;
+         background-color: #000000;
+         margin: 2vh 5vw 10vh 5vw;
+         padding: 2vh;
          }
 
-     .habilidade{
-        background-color: greenyellow;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top:4vh;
-        margin-bottom: 5vh;
-     }
+     .sobre-titulo{
+         margin: 4vh;
+         }
 
-     .hb{
-        background-color: #1100ff;
-        padding: 2vh;
-     }
-     
-     .hb img{
-        height: 10vh;
-     }
+     .sobremim-text{
+         background-color: rgb(0, 0, 0);
+         }
 
-     .hb p{
-        text-align: center;
-     }
+     .sobre-img{
+         height: 68vh;
+         width: 40vw;
+         }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HABILIDADES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#habilidades{
+    margin: 10vh 5vw 10vh 5vw;
+    padding: 5vh 1vw 10vh;
+    }
 
-     .card-dt{
-        background-color: blue;
-        margin: 10vh 2vw;
-     }
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PROJETOS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#projetos{
-    background-color: #ff0000;
-    margin: 5vh;
+.habilidade{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap:wrap;
+   padding: 2vh;
+   margin-top:4vh;
+   margin-bottom: 5vh;
 }
+
+.hb{
+   padding: 0vh 0vw;
+   margin: 1vh 0.2vw;
+}
+
+.hb img{
+   height: 15vh;
+   filter: grayscale();
+}
+
+.hb img:hover{
+    filter: none;
+}
+
+.hb p{
+   text-align: center;
+   font-size: 0.9rem;
+}
+
+.card-dt{
+   margin: 25vh 2vw;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PROJETOS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CERTIFICAÇÕES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#certificações{
-    background-color: #ff0000;
-    margin: 5vh;
+#slider {
+    position: relative;
+    width: 70%;
+    height: 35vh;
+    width: 90%;
+    height: 80vh;
+    margin: 80px auto;
+    perspective: 1400px;
+    transform-style: preserve-3d;
 }
-#slider img{
-    height: 50vh;
+
+input[type="radio"] {
+    display: none;
+}
+
+#slider label {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    transform-origin: center;
+    transform: scale(0.8) translateX(-50%);
+}
+#slider label img {
+    width: 100%;
+    width:100%;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+/* Slider ativo */
+#s1:checked ~ #slider1,
+#s2:checked ~ #slider2,
+#s3:checked ~ #slider3,
+#s4:checked ~ #slider4,
+#s5:checked ~ #slider5 
+#s5:checked ~ #slider5,
+#s6:checked ~ #slider6 {
+    opacity: 1;
+    transform: scale(1) translateX(-50%);
+    z-index: 2;
+}
+
+/* Próximo slider */
+#s1:checked ~ #slider2,
+#s2:checked ~ #slider3,
+#s3:checked ~ #slider4,
+#s4:checked ~ #slider5,
+#s5:checked ~ #slider1 
+#s5:checked ~ #slider6,
+#s6:checked ~ #slider1 {
+    opacity: 0.6;
+    transform: scale(0.9) translateX(50%);
+    z-index: 1;
+}
+
+/* Slider anterior */
+#s1:checked ~ #slider5,
+#s1:checked ~ #slider6,
+#s2:checked ~ #slider1,
+#s3:checked ~ #slider2,
+#s4:checked ~ #slider3,
+#s5:checked ~ #slider4 
+#s5:checked ~ #slider4,
+#s6:checked ~ #slider5{
+    opacity: 0.6;
+    transform: scale(0.9) translateX(-160%);
+    z-index: 1;
+}
+
+/* Outros sliders (fora do alcance) */
+#s1:checked ~ #slider3,
+#s2:checked ~ #slider4,
+#s3:checked ~ #slider5,
+#s4:checked ~ #slider1,
+#s5:checked ~ #slider2 
+#s4:checked ~ #slider6,
+#s5:checked ~ #slider1,
+#s6:checked ~ #slider2{
+    opacity: 0.2;
+    transform: scale(0.7) translateX(-90%);
+    z-index: 0;
+}
+#navigation {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#navigation button {
+    background-color: #fff9f9;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    filter: drop-shadow(5px 5px 15px white);
+}
+#navigation button:hover {
+    background-color: #ffffff;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #footer{
-    background-color: #ff0000;
-    margin: 0vh 0vw;
+background-color: #ff0000;
+margin: 1vh 5vw 1vh 5vw;
 }
 .part1{
-    background-color: #1100ff;
+background-color: #1100ff;
 }
 
 .part2{
-    background-color: greenyellow;
+background-color: greenyellow;
 }
 
 .part3{
-    background-color: rgb(255, 0, 242);
+background-color: rgb(255, 0, 242);
 }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BARRA_DE_ROLAGEM~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 12px; 
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: #030303; 
+    border-radius: 6px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+    border-radius: 6px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+  }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MENU_EXPANSIVO_(HAMBURGUER)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-     .navbar-toggler {
-         border: none; 
-         transition: transform 0.3s ease-in-out; 
-         }
-          
-     .navbar-toggler:focus{
-         outline: none; 
-         }
-          
-     .navbar-toggler-icon {
-         display: block;
-         width: 40px;
-         height: 3px;
-         background-color: #ffffff; 
-         border-radius: 2px;
-         position: relative;
-         transition: all 0.3s ease-in-out;
-         }
-          
-     .navbar-toggler-icon::before,
-     .navbar-toggler-icon::after {
-         content: '';
-         width: 40px;
-         height: 3px;
-         background-color: #ffffff;
-         border-radius: 2px;
-         position: absolute;
-         transition: all 0.3s ease-in-out;
-         }
-          
-     .navbar-toggler-icon::before {
-         top: -8px; 
-         left: 2px;
-         }
-          
-     .navbar-toggler-icon::after {
-         top: 8px; 
-         left: 2px;
-         }
-          
-     .navbar-toggler.collapsed .navbar-toggler-icon {
-         background-color: #ffffff; 
-         }
-          
-     .navbar-toggler.collapsed .navbar-toggler-icon::before {
-         transform: rotate(0deg) translate(0, 0);
-         }
-          
-     .navbar-toggler.collapsed .navbar-toggler-icon::after {
-         transform: rotate(0deg) translate(0, 0);
-         }
-          
-     .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-         background-color: transparent; 
-         }
-          
-     .navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
-         transform: rotate(45deg) translate(5px, 5px); 
-         }
-          
-     .navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
-         transform: rotate(-45deg) translate(5px, -5px); 
-         }
-          
+.navbar-toggler {
+    border: none; 
+    transition: transform 0.3s ease-in-out; 
+    }
+     
+.navbar-toggler:focus{
+    outline: none; 
+    }
+     
+.navbar-toggler-icon {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #ffffff; 
+    border-radius: 2px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    }
+     
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    }
+     
+.navbar-toggler-icon::before {
+    top: -8px; 
+    left: 2px;
+    }
+     
+.navbar-toggler-icon::after {
+    top: 8px; 
+    left: 2px;
+    }
+     
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: #ffffff; 
+    }
+     
+.navbar-toggler.collapsed .navbar-toggler-icon::before {
+    transform: rotate(0deg) translate(0, 0);
+    }
+     
+.navbar-toggler.collapsed .navbar-toggler-icon::after {
+    transform: rotate(0deg) translate(0, 0);
+    }
+     
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-color: transparent; 
+    }
+     
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+    transform: rotate(45deg) translate(5px, 5px); 
+    }
+     
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+    transform: rotate(-45deg) translate(5px, -5px); 
+    }
+     
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TELAS_DISPOSITIVOS_MOVEIS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-     @media (max-width: 480px) {
+@media (max-width: 480px) {
 
-        /*~~~~~~~~~~~~~~~~~~NAVEGADOR~~~~~~~~~~~~~~~~~~~~~~~*/
-        .navegador{
-            background-color: transparent;
-            padding: 0vh;
-            height: 10vh;
-            font-size: 1.2rem;
-            }
-   
-        .navbar h2{
-            color: #ffffff;
-            }
-   
-        .logo-navbar{
-            height: 7vh;
-            filter: grayscale();
-            }
-       
-        .nav-item{
-            margin: 0vh 0.4vw;
-            padding: 0vh;
-            border-radius: 25px;
-            background-color: transparent;
-            padding: 1vh 1vw ;
-            border-color: #000000;
-            }
-   
-        .nav-item:hover{
-            filter: drop-shadow(0px 2px 10px #ffffff);
-            }
-   
-        .nav-link{
-            color: #ffffff;
-            border-radius: 25px;
-            font-size: 1.2rem;
-            }
-   
-        .nav-link:hover{
-            color: #ffffff;
-            background-color: #000000;
-            font-size: 1.2rem;
-            filter: drop-shadow(0px 2px 10px #ffffff);
-            }
+   /*~~~~~~~~~~~~~~~~~~NAVEGADOR~~~~~~~~~~~~~~~~~~~~~~~*/
+   .navegador{
+       background-color: transparent;
+       padding: 0vh;
+       height: 10vh;
+       font-size: 1.2rem;
+       }
+
+   .navbar h2{
+       color: #ffffff;
+       }
+
+   .logo-navbar{
+       height: 7vh;
+       filter: grayscale();
+       }
+  
+   .nav-item{
+       margin: 0vh 0.4vw;
+       padding: 0vh;
+       border-radius: 25px;
+       background-color: transparent;
+       padding: 1vh 1vw ;
+       border-color: #000000;
+       }
+
+   .nav-item:hover{
+       filter: drop-shadow(0px 2px 10px #ffffff);
+       }
+
+   .nav-link{
+       color: #ffffff;
+       border-radius: 25px;
+       font-size: 1.2rem;
+       }
+
+   .nav-link:hover{
+       color: #ffffff;
+       background-color: #000000;
+       font-size: 1.2rem;
+       filter: drop-shadow(0px 2px 10px #ffffff);
+       }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~INTRO_PORTIFOLIO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #introducao{
-    background-color: rgba(0, 0, 0, 0.712);
-    display: flex;
-    margin: 6vh
- }     
+background-color: rgba(0, 0, 0, 0.712);
+display: flex;
+margin: 6vh
+}     
 
 #introducao h1{
 margin: 5vh;
@@ -345,11 +467,11 @@ font-size: 2.8rem;
 font-weight: 1000;
 }
 
- .intro-img{
-      height: 45vh;
-     border-radius: 50%;
-     
-     }
+.intro-img{
+ height: 45vh;
+border-radius: 50%;
+
+}
 .intro-text{
 font: 900;
 }

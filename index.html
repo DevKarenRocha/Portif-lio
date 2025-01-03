@@ -22,7 +22,7 @@
                  <div class="container">
                      <div class="navbar-brand d-flex align-items-center">
                          <figure>
-                             <img class="logo-navbar me-2" src="IMG/home-icon-logo.png" alt="logo" height="60vh">
+                             <img class="nav-logo me-2" src="IMG/nav-icon-logo.png" alt="logo" height="60vh">
                          </figure>
                          <h2>Karen Rocha </h2>
                      </div>
@@ -89,12 +89,12 @@
                      <h1 class="text-center">Sobre mim</h1>
                     </div>
                      <div class="row align-items-right">
-                         <div class="col-md-6 text-center">
+                         <div class="col-6 text-center">
                              <figure>
                                  <img class="sobre-img" src="IMG/foto2.jpeg" alt="fotoperfil2">
                              </figure>
                          </div>
-                         <div class="col-md-6 text-center">
+                         <div class="col-6 text-center">
                              <p class="sobremim-text">
                                  Sou uma desenvolvedora <strong>FULL STACK</strong> em formação, apaixonada por criar soluções digitais que combinam <strong>TECNOLOGIA</strong>  e 
                                  <strong>EXPERIÊNCIA DO USUÁRIO</strong>  de forma eficiente. Focada no <strong>FRONT-END</strong> , trabalho com <strong>HTML, CSS, JAVASCRIPT</strong>  e frameworks 
@@ -109,131 +109,183 @@
                      </div>
                  </div>
              </section>            
-             <section id="habilidades"class="container" > 
-                <div class="hablilidade-titulo">
-                    <h2 class="text-center">Habilidades</h2> 
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="habilidade">
-                            <div class="hb" onmouseover="showDescricao
-                                    ('HTML5 (HyperText Markup Language, versão 5) HTML5 é a versão mais recente da linguagem de marcação usada para estruturar páginas web.')">
-                                <img src="IMG/html-5.png" alt="HTML5">
-                                <p>HTML5</p>
+             <section id="habilidades">
+                <div class="container">
+                    <div class="hablilidade-titulo">
+                        <h1 class="text-center">Habilidades</h1> 
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="habilidade">
+                                <div class="hb" onmouseover="showDescricao
+                                        ('HTML5 (HyperText Markup Language, versão 5) HTML5 é a versão mais recente da linguagem de marcação usada para estruturar páginas web.')">
+                                    <img src="IMG/icon-html.png" alt="HTML5">
+                                    <p>HTML5</p>
+                                </div>
+                                <div class="hb" onmouseover="showDescricao('CSS3 (Cascading Style Sheets, versão 3) é a versão atual da linguagem de estilo para páginas web, que permite criar layouts responsivos, animações e efeitos visuais avançados, melhorando a aparência e a experiência do usuário.')">
+                                    <img src="IMG/icon-css.png" alt="CSS3">
+                                    <p>CSS3</p>
+                                </div>
+                                <div class="hb" onmouseover="showDescricao
+                                        ('JavaScript é uma linguagem de programação usada para criar interatividade em páginas web, permitindo a manipulação de elementos HTML, o controle de eventos e a integração com servidores e APIs. Embora ainda não domine perfeitamente a linguagem, estou estudando e buscando aprimorar minhas habilidades em JavaScript.')">
+                                    <img src="IMG/icon-js.png" alt="JavaScript">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="hb" onmouseover="showDescricao
+                                        ('Python é uma linguagem de programação de alto nível, conhecida por sua sintaxe simples e versatilidade. Foi uma das primeiras linguagens com as quais tive contato e usei para desenvolver uma automação que otimizou uma das rotinas de trabalho na última empresa em que estive.')">
+                                    <img src="IMG/icon-nodejs.png" alt="Node.js">
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="hb" onmouseover="showDescricao
+                                ('GitHub é uma plataforma online baseada em Git, que oferece repositórios para armazenar, compartilhar e colaborar em código, além de funcionalidades como controle de versão, issue tracking e integração contínua.')">
+                            <img src="IMG/icon-react.png" alt="Github">
+                            <p>Github</p>
+                        </div>
+                                <div class="hb" onmouseover="showDescricao
+                                        ('Bootstrap é um framework front-end que facilita o desenvolvimento de páginas web responsivas e visualmente atraentes, oferecendo um conjunto de componentes e utilitários prontos para uso. Ele utiliza HTML, CSS e JavaScript, permitindo criar layouts rápidos e consistentes em diferentes dispositivos.')">
+                                    <img src="IMG/icon-bootstrap.png" alt="Bootstrap">
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="hb" onmouseover="showDescricao
+                                        ('GitHub é uma plataforma online baseada em Git, que oferece repositórios para armazenar, compartilhar e colaborar em código, além de funcionalidades como controle de versão, issue tracking e integração contínua.')">
+                                    <img src="IMG/icon-tailwind.png" alt="Github">
+                                    <p>Tailwind CSS</p>
+                                </div>
+                                <div class="hb" onmouseover="showDescricao
+                                    ('Git é um sistema de controle de versão distribuído que permite gerenciar o histórico de mudanças de código, facilitando o trabalho em equipe e a colaboração em projetos de software. Ele permite criar versões de um projeto, rastrear modificações e reverter alterações quando necessário. ')">
+                                    <img src="IMG/icon-git.png" alt="Git">
+                                    <p>Git</p>
+                                </div> 
+                                <div class="hb" onmouseover="showDescricao
+                                        ('GitHub é uma plataforma online baseada em Git, que oferece repositórios para armazenar, compartilhar e colaborar em código, além de funcionalidades como controle de versão, issue tracking e integração contínua.')">
+                                    <img src="IMG/icon-github.png" alt="Github">
+                                    <p>Github</p>
+                                </div>  
+                                 
                             </div>
-                            <div class="hb" onmouseover="showDescricao('CSS3 (Cascading Style Sheets, versão 3) é a versão atual da linguagem de estilo para páginas web, que permite criar layouts responsivos, animações e efeitos visuais avançados, melhorando a aparência e a experiência do usuário.')">
-                                <img src="IMG/css-3.png" alt="CSS3">
-                                <p>CSS3</p>
+                        </div>
+                        <div class="teste col-6" onmouseover="showDescricao ('Passe o mouse por cima de alguma habilidade para ler a descrição.')">
+                            <div class="card-dt">
+                                <p id="descricao" class="text-center">
+                                    Passe o mouse por cima de alguma habilidade para ler a descrição.
+                                </p>
                             </div>
-                            <div class="hb" onmouseover="showDescricao
-                                    ('JavaScript é uma linguagem de programação usada para criar interatividade em páginas web, permitindo a manipulação de elementos HTML, o controle de eventos e a integração com servidores e APIs. Embora ainda não domine perfeitamente a linguagem, estou estudando e buscando aprimorar minhas habilidades em JavaScript.')">
-                                <img src="IMG/js.png" alt="JavaScript">
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="hb" onmouseover="showDescricao
-                                    ('Python é uma linguagem de programação de alto nível, conhecida por sua sintaxe simples e versatilidade. Foi uma das primeiras linguagens com as quais tive contato e usei para desenvolver uma automação que otimizou uma das rotinas de trabalho na última empresa em que estive.')">
-                                <img src="IMG/python.png" alt="Phyton">
-                                <p>Phyton</p>
-                            </div>
-                            <div class="hb" onmouseover="showDescricao
-                                    ('Bootstrap é um framework front-end que facilita o desenvolvimento de páginas web responsivas e visualmente atraentes, oferecendo um conjunto de componentes e utilitários prontos para uso. Ele utiliza HTML, CSS e JavaScript, permitindo criar layouts rápidos e consistentes em diferentes dispositivos.')">
-                                <img src="IMG/bootstrap.png" alt="Bootstrap">
-                                <p>Bootstrap</p>
-                            </div>
-                            <div class="hb" onmouseover="showDescricao
-                                    ('GitHub é uma plataforma online baseada em Git, que oferece repositórios para armazenar, compartilhar e colaborar em código, além de funcionalidades como controle de versão, issue tracking e integração contínua.')">
-                                <img src="IMG/tailwind .png" alt="Github">
-                                <p>Tailwind</p>
-                            </div>
-                            <div class="hb" onmouseover="showDescricao
-                                ('Git é um sistema de controle de versão distribuído que permite gerenciar o histórico de mudanças de código, facilitando o trabalho em equipe e a colaboração em projetos de software. Ele permite criar versões de um projeto, rastrear modificações e reverter alterações quando necessário. ')">
-                                <img src="IMG/git.png" alt="Git">
-                                <p>Git</p>
-                            </div> 
-                            <div class="hb" onmouseover="showDescricao
-                                    ('GitHub é uma plataforma online baseada em Git, que oferece repositórios para armazenar, compartilhar e colaborar em código, além de funcionalidades como controle de versão, issue tracking e integração contínua.')">
-                                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Github">
-                                <p>Github</p>
-                            </div>  
                         </div>
                     </div>
-                    <div class="teste col-6" onmouseover="showDescricao ('Passe o mouse por cima de alguma habilidade para ler a descrição.')">
-                        <div class="card-dt">
-                            <p id="descricao" class="text-center">
-                                Passe o mouse por cima de alguma habilidade para ler a descrição.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                </div> 
+                
             </section> 
             <section id="projetos">
                 <div class="container">
-                    <div class="projeto">
-                    <h3 class="text-center">PROJETOS</h3>
-                    <p class="text-center" >veja alguns dos meus projetos</p>
-                    <div class="row align-items-right">
-                         <div class="col-md-6 text-center">
-                            <figure>
-                                <img class="projeto-img" src="IMG/pjt1.png" alt="fotoperfil2">
-                            </figure>
-                         </div>
-                         <div class="col-6 text-center" >
-                            <div class="projeto-p">
-                                 <p>
-                                     Sou uma desenvolvedora full stack em formação, apaixonada por criar soluções digitais que 
-                                     habilidades no front-end, trabalhando com tecnologias como HTML, CSS, e JavaScript.
-                                 </p>
-                                 <img  class="bugg"src="IMG/html-5.png" alt="">
-                                 <img class="bugg"src="IMG/css-3.png" alt="">
-                                 <img class="bugg"src="IMG/js.png" alt=""><br>
-                                 <button class="projeto-btn"> GitHub</button>
-                                 <button class="projeto-btn">Ver projeto</button>
-                             </div> 
+                    <h3 class="text-center mb-4">PROJETOS</h3>
+                    <p class="text-center mb-5">
+                        Bem-vindo à seção de projetos! Aqui você encontrará uma seleção de trabalhos que refletem minha dedicação e paixão pelo desenvolvimento de soluções criativas e funcionais. Explore alguns dos meus projetos abaixo e, para conferir ainda mais exemplos, clique no botão <strong>Portfólio</strong>.
+                    </p>
+            
+                    <div class="row">
+                        <!-- Projeto 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div class="imagem-card mb-3" style="background-color: #f0f0f0; height: 200px;">
+                                        <!-- Espaço reservado para a imagem do projeto -->
+                                    </div>
+                                    <h5 class="card-title">Projeto 1</h5>
+                                    <p class="card-text">
+                                        Aplicação com foco em experiência do usuário, integrando animações e design intuitivo utilizando Tailwind 
+                                    <div class="projetos-tec mb-3">
+                                        <button class="btn btn-sm btn-primary">HTML5</button>
+                                        <button class="btn btn-sm btn-secondary">CSS3</button>
+                                        <button class="btn btn-sm btn-warning">JavaScript</button>
+                                    </div>
+                                    <div class="projetos-btn">
+                                        <a href="https://github.com" target="_blank" class="btn btn-outline-dark">GitHub</a>
+                                        <a href="#" class="btn btn-outline-primary">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 text-center" >
-                            <figure>
-                                <img class="projeto-img" src="IMG/pjt2.png" alt="fotoperfil2">
-                            </figure>
-                         </div>
-                         <div class="col-6 text-center">
-                            <div class="projeto-p">
-                                 <p>
-                                     Sou uma desenvolvedora full stack em formação, apaixonada por criar soluções digitais que 
-                                     habilidades no front-end, trabalhando com tecnologias como HTML, CSS, e JavaScript.
-                                 </p>
-                                 <img class="bugg"src="IMG/html-5.png" alt="">
-                                 <img class="bugg"src="IMG/css-3.png" alt="">
-                                 <img class="bugg"src="IMG/js.png" alt=""><br>
-                                 <button class="projeto-btn"> GitHub</button>
-                                 <button class="projeto-btn">Ver projeto</button>
-                             </div> 
+            
+                        <!-- Projeto 2 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div class="imagem-card mb-3" style="background-color: #f0f0f0; height: 200px;">
+                                        <!-- Espaço para a imagem -->
+                                    </div>
+                                    <h5 class="card-title">Projeto 2</h5>
+                                    <p class="card-text">
+                                        Aplicação com foco em experiência do usuário, integrando animações e design intuitivo utilizando Tailwind 
+                                    </p>
+                                    <div class="projetos-tec mb-3">
+                                        <button class="btn btn-sm btn-primary">HTML5</button>
+                                        <button class="btn btn-sm btn-secondary">CSS3</button>
+                                        <button class="btn btn-sm btn-success">Tailwind</button>
+                                        <button class="btn btn-sm btn-dark">Node.js</button>
+                                    </div>
+                                    <div class="projetos-btn">
+                                        <a href="https://github.com" target="_blank" class="btn btn-outline-dark">GitHub</a>
+                                        <a href="#" class="btn btn-outline-primary">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 text-center" >
-                            <figure>
-                                <img class="projeto-img" src="IMG/em_breve.png" alt="fotoperfil2">
-                            </figure>
-                         </div>
-                         <div class="col-6 text-center">
-                            <div class="projeto-p">
-                                 <p>
-                                     Sou uma desenvolvedora full stack em formação, apaixonada por criar soluções digitais que 
-                                     habilidades no front-end, trabalhando com tecnologias como HTML, CSS, e JavaScript.
-                                 </p>
-                                 <img class="bugg"src="IMG/html-5.png" alt="">
-                                 <img class="bugg"src="IMG/css-3.png" alt="">
-                                 <img class="bugg"src="IMG/js.png" alt=""><br>
-                                 <button class="projeto-btn"> GitHub</button>
-                                 <button class="projeto-btn">Ver projeto</button>
-                             </div> 
+            
+                        <!-- Projeto 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div class="imagem-card mb-3" style="background-color: #f0f0f0; height: 200px;">
+                                         <!-- Espaço para a imagem -->
+                                    </div>
+                                    <h5 class="card-title">Projeto 3</h5>
+                                    <p class="card-text">
+                                        Aplicação com foco em experiência do usuário, integrando animações e design intuitivo utilizando Tailwind e AOS.
+                                    </p>
+                                    <div class="projetos-tec mb-3">
+                                        <button class="btn btn-sm btn-primary">HTML5</button>
+                                        <button class="btn btn-sm btn-secondary">CSS3</button>
+                                        <button class="btn btn-sm btn-warning">JavaScript</button>
+                                        <button class="btn btn-sm btn-success">AOS</button>
+                                    </div>
+                                    <div class="projetos-btn">
+                                        <a href="https://github.com" target="_blank" class="btn btn-outline-dark">GitHub</a>
+                                        <a href="#" class="btn btn-outline-primary">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Projeto 4 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <div class="imagem-card mb-3" style="background-color: #f0f0f0; height: 200px;">
+                                         <!-- Espaço para a imagem -->
+                                    </div>
+                                    <h5 class="card-title">Projeto 4</h5>
+                                    <p class="card-text">
+                                        Projeto com foco em responsividade, utilizando Bootstrap para criar layouts que se adaptam a diferentes dispositivos.
+                                    </p>
+                                    <div class="projetos-tec mb-3">
+                                        <button class="btn btn-sm btn-primary">HTML5</button>
+                                        <button class="btn btn-sm btn-secondary">CSS3</button>
+                                        <button class="btn btn-sm btn-warning">JavaScript</button>
+                                        <button class="btn btn-sm btn-info">Bootstrap</button>
+                                    </div>
+                                    <div class="projetos-btn">
+                                        <a href="https://github.com" target="_blank" class="btn btn-outline-dark">GitHub</a>
+                                        <a href="#" class="btn btn-outline-primary">Ver Projeto</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="projeto-footer">
-                        <button class="bnt-footer">Portifólio</button>
-                    </div>
-                    
+            
                 </div>
-                </div>
-             </section>
+            </section>
+            
+                        
              <section id="certificacoes">
                 <div class="container">
                     <div id="slider">
@@ -267,31 +319,33 @@
             </section>
             
          </main>
-         <footer id="footer" class="container">
-             <div class="part">
-                 <div class="part1 col-4"> 
-                     <div class="subpart">
-                        <h3>Karen Rocha</h3>
-                        <h5>Front-end Developer</h5>
-                        <div>
-                             <img src="IMG/icon.png" alt="">
-                             <img src="IMG/icon.png" alt="">
-                             <img src="IMG/icon.png" alt="">
-                             <img src="IMG/icon.png" alt="">
+         <footer id="footer" >
+            <div class="container">
+                <div class="part">
+                    <div class="part1 col-4"> 
+                        <div class="subpart">
+                           <h3>Karen Rocha</h3>
+                           <h5>Front-end Developer</h5>
+                           <div>
+                                <img src="IMG/icon.png" alt="">
+                                <img src="IMG/icon.png" alt="">
+                                <img src="IMG/icon.png" alt="">
+                                <img src="IMG/icon.png" alt="">
+                           </div>
                         </div>
-                     </div>
-                 </div>
-                 <div class="part2 col-4"> 
-                    <div>
-                        <p>Visitante número: <span id="counter">0</span></p>
                     </div>
+                    <div class="part2 col-4"> 
+                       <div>
+                           <p>Visitante número: <span id="counter">0</span></p>
+                       </div>
+                   </div>
+                   <div class="part3 col-4"> 
+                       <div>
+   
+                       </div>
+                   </div>
                 </div>
-                <div class="part3 col-4"> 
-                    <div>
-
-                    </div>
-                </div>
-             </div>
+            </div>
          </footer>
          <script>
             // Função para atualizar o contador de acessos
